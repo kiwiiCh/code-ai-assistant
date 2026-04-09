@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <title>No‑Limit Code AI · Claude‑style</title>
-    <!-- Font & Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet">
@@ -15,7 +14,6 @@
             padding: 0;
             box-sizing: border-box;
         }
-
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             background: #0b0e14;
@@ -26,8 +24,6 @@
             margin: 0;
             color: #e9edf5;
         }
-
-        /* mobile-first container */
         .phone-frame {
             width: 100%;
             max-width: 420px;
@@ -44,7 +40,6 @@
             border-right: 1px solid #2a313c;
             position: relative;
         }
-
         @media (min-width: 420px) {
             .phone-frame {
                 border-radius: 32px;
@@ -53,8 +48,6 @@
                 border: 1px solid #2a313c;
             }
         }
-
-        /* header — exactly Claude style */
         .chat-header {
             padding: 16px 18px 12px;
             border-bottom: 1px solid #262e3a;
@@ -63,13 +56,11 @@
             align-items: center;
             justify-content: space-between;
         }
-
         .header-left {
             display: flex;
             align-items: center;
             gap: 10px;
         }
-
         .ai-avatar {
             background: #1f2a37;
             width: 40px;
@@ -81,14 +72,12 @@
             color: #a3d0ff;
             font-size: 22px;
         }
-
         .header-title h2 {
             font-size: 1.2rem;
             font-weight: 600;
             letter-spacing: -0.02em;
             color: white;
         }
-
         .header-title p {
             font-size: 0.7rem;
             color: #9aa7b9;
@@ -96,7 +85,6 @@
             align-items: center;
             gap: 4px;
         }
-
         .internet-badge {
             background: #1e7e34;
             color: white;
@@ -106,14 +94,11 @@
             font-weight: 600;
             margin-left: 6px;
         }
-
         .header-actions {
             display: flex;
             gap: 12px;
             color: #b4c2d9;
         }
-
-        /* main chat area — scrollable */
         .chat-main {
             flex: 1;
             overflow-y: auto;
@@ -124,28 +109,22 @@
             background: #0f151c;
             scroll-behavior: smooth;
         }
-
-        /* message bubbles */
         .message-row {
             display: flex;
             gap: 10px;
         }
-
         .message-ai {
             align-self: flex-start;
             width: 100%;
         }
-
         .message-user {
             justify-content: flex-end;
         }
-
         .ai-bubble-wrapper {
             display: flex;
             gap: 8px;
             max-width: 100%;
         }
-
         .ai-icon-small {
             width: 28px;
             height: 28px;
@@ -158,7 +137,6 @@
             font-size: 14px;
             flex-shrink: 0;
         }
-
         .bubble {
             background: #1e2733;
             padding: 14px 16px;
@@ -171,7 +149,6 @@
             line-height: 1.5;
             word-break: break-word;
         }
-
         .user-bubble {
             background: #2563eb;
             color: white;
@@ -182,8 +159,6 @@
             box-shadow: 0 4px 8px rgba(37,99,235,0.2);
             font-weight: 450;
         }
-
-        /* code block inside bubble */
         .code-block-container {
             margin-top: 14px;
             background: #0a0e14;
@@ -192,7 +167,6 @@
             border: 1px solid #334152;
             position: relative;
         }
-
         .code-header {
             display: flex;
             justify-content: space-between;
@@ -202,11 +176,9 @@
             font-weight: 500;
             letter-spacing: 0.3px;
         }
-
         .code-header i {
             margin-right: 6px;
         }
-
         .copy-btn, .download-btn {
             background: #2b3a4a;
             border: none;
@@ -222,19 +194,16 @@
             transition: 0.15s;
             border: 0.5px solid #4a5e72;
         }
-
         .copy-btn:hover, .download-btn:hover {
             background: #3f556b;
             color: white;
         }
-
         .action-bar {
             display: flex;
             gap: 8px;
             margin-top: 10px;
             flex-wrap: wrap;
         }
-
         pre {
             background: #050a10;
             padding: 12px;
@@ -247,14 +216,11 @@
             word-break: break-word;
             border: 1px solid #2d3b49;
         }
-
-        /* input area */
         .chat-footer {
             padding: 14px 16px 18px;
             background: #131820;
             border-top: 1px solid #262e3a;
         }
-
         .input-wrapper {
             display: flex;
             align-items: flex-end;
@@ -263,7 +229,6 @@
             padding: 4px 6px 4px 18px;
             border: 1px solid #354252;
         }
-
         .input-wrapper textarea {
             flex: 1;
             background: transparent;
@@ -276,12 +241,10 @@
             font-family: inherit;
             outline: none;
         }
-
         .input-wrapper textarea::placeholder {
             color: #8496ae;
             font-weight: 400;
         }
-
         .send-btn {
             background: #2563eb;
             border: none;
@@ -297,12 +260,9 @@
             transition: 0.15s;
             margin-left: 6px;
         }
-
         .send-btn:hover {
             background: #3b74f0;
         }
-
-        /* internet / web indicator */
         .web-chip {
             background: #1e3a2f;
             color: #a0e7c5;
@@ -312,13 +272,11 @@
             display: inline-block;
             margin-right: 8px;
         }
-
         .typing-indicator {
             display: flex;
             gap: 5px;
             padding: 8px 0 4px;
         }
-
         .typing-indicator span {
             width: 7px;
             height: 7px;
@@ -326,15 +284,12 @@
             border-radius: 50%;
             animation: bounce 1.4s infinite ease-in-out both;
         }
-
         .typing-indicator span:nth-child(1) { animation-delay: -0.32s; }
         .typing-indicator span:nth-child(2) { animation-delay: -0.16s; }
-
         @keyframes bounce {
             0%, 80%, 100% { transform: scale(0.6); opacity: 0.4; }
             40% { transform: scale(1); opacity: 1; }
         }
-
         .small-note {
             font-size: 0.7rem;
             color: #889bb2;
@@ -347,7 +302,6 @@
 </head>
 <body>
 <div class="phone-frame">
-    <!-- Header: Claude replica with internet badge -->
     <div class="chat-header">
         <div class="header-left">
             <div class="ai-avatar">
@@ -368,9 +322,7 @@
         </div>
     </div>
 
-    <!-- Chat scroll area -->
     <div class="chat-main" id="chatContainer">
-        <!-- Intro message from AI (Claude style) -->
         <div class="message-row message-ai">
             <div class="ai-bubble-wrapper">
                 <div class="ai-icon-small"><i class="fas fa-code"></i></div>
@@ -380,12 +332,11 @@
                         <span style="font-weight: 500;">No limits · code specialist</span>
                     </span>
                     I'm a coding AI with zero barriers. I can fetch real‑time docs, write anything, and give you downloadable files + copyable code — just like Claude, but optimized for developers.<br><br>
-                    <strong>Try me:</strong> “Create a Python script that fetches live Bitcoin price” or “build a React counter component” — I’ll provide the file.
+                    <strong>Try me:</strong> "Create a Python script that fetches live Bitcoin price" or "build a React counter component" — I'll provide the file.
                 </div>
             </div>
         </div>
 
-        <!-- Example downloadable demo message (static but sets expectation) -->
         <div class="message-row message-ai">
             <div class="ai-bubble-wrapper">
                 <div class="ai-icon-small"><i class="fas fa-bolt"></i></div>
@@ -421,10 +372,8 @@ export const Counter = () => {
                 </div>
             </div>
         </div>
-        <!-- Dynamic messages will be inserted here -->
     </div>
 
-    <!-- Input area -->
     <div class="chat-footer">
         <div class="input-wrapper">
             <textarea id="userInput" placeholder="Ask anything code… internet assisted" rows="1"></textarea>
@@ -444,7 +393,6 @@ export const Counter = () => {
         const userInput = document.getElementById('userInput');
         const sendBtn = document.getElementById('sendBtn');
 
-        // ---------- helpers for code block extraction & demo ----------
         window.copyCodeFromExample = function() {
             const code = document.getElementById('exampleCodeSnippet').innerText;
             navigator.clipboard?.writeText(code).then(()=> {
@@ -457,7 +405,6 @@ export const Counter = () => {
             downloadFile(code, 'Counter.jsx', 'text/javascript');
         };
 
-        // generic download
         function downloadFile(content, fileName, mimeType = 'text/plain') {
             const blob = new Blob([content], { type: mimeType });
             const url = URL.createObjectURL(blob);
@@ -470,42 +417,26 @@ export const Counter = () => {
             URL.revokeObjectURL(url);
         }
 
-        // copy text to clipboard
-        function copyTextToClipboard(text) {
-            navigator.clipboard?.writeText(text).then(() => {
-                // subtle feedback
-            }).catch(() => {});
-        }
-
-        // helper to simulate "internet fetch" (for realism we use public APIs)
         async function fetchInternetContext(query) {
-            // Simulate internet augmentation: we'll try to get a fun fact / time or mock.
-            // Actually call a free API for demonstration (no key)
             try {
-                // Use a CORS-friendly public endpoint - e.g. random programming quote / or advice
                 const res = await fetch('https://api.adviceslip.com/advice');
                 if (res.ok) {
                     const data = await res.json();
                     return `🌐 Internet insight: "${data.slip.advice}" — applied to your request.`;
                 }
-            } catch (e) {
-                // fallback
-                return `🌐 Internet lookup: using real-time coding patterns (no limits).`;
-            }
-            return `🌐 Web mode: unrestricted access to latest docs.`;
+            } catch (e) {}
+            return `🌐 Internet lookup: using real-time coding patterns (no limits).`;
         }
 
-        // build AI response with downloadable code (like Claude)
         function generateCodeResponse(userQuery) {
             const lower = userQuery.toLowerCase();
             let fileName = 'code.txt';
             let codeContent = '';
             let explanation = '';
 
-            // DETECT INTENT – simple but expressive "no barriers" replies
             if (lower.includes('python') || lower.includes('script') || lower.includes('bitcoin') || lower.includes('price')) {
                 fileName = 'crypto_price.py';
-                codeContent = `import requests\nimport json\n\n# No-limits AI: fetch live BTC price (internet enabled)\nurl = "https://api.coindesk.com/v1/bpi/currentprice.json"\ntry:\n    response = requests.get(url)\n    data = response.json()\n    price = data['bpi']['USD']['rate']\n    print(f"₿ Bitcoin price: ${price} USD")\nexcept Exception as e:\n    print("Error:", e)`;
+                codeContent = `import requests\nimport json\n\n# No-limits AI: fetch live BTC price (internet enabled)\nurl = "https://api.coindesk.com/v1/bpi/currentprice.json"\ntry:\n    response = requests.get(url)\n    data = response.json()\n    price = data['bpi']['USD']['rate']\n    print(f"₿ Bitcoin price: {price} USD")\nexcept Exception as e:\n    print("Error:", e)`;
                 explanation = `🐍 Python script using real internet API (Coindesk). No restrictions. I fetched the structure live.`;
             } else if (lower.includes('react') || lower.includes('component') || lower.includes('counter')) {
                 fileName = 'InteractiveCounter.jsx';
@@ -520,7 +451,6 @@ export const Counter = () => {
                 codeContent = `// No-barrier AI: fetch from any public API\nasync function fetchData(url) {\n  try {\n    const res = await fetch(url);\n    const data = await res.json();\n    console.log('📡 Data:', data);\n    return data;\n  } catch(e) {\n    console.error(e);\n  }\n}\n\n// Example: fetch users\nfetchData('https://jsonplaceholder.typicode.com/users');`;
                 explanation = `📡 JavaScript fetch with internet — works anywhere.`;
             } else {
-                // generic but still delivers file
                 fileName = 'solution.js';
                 codeContent = `// No-limits AI response for: "${userQuery}"\n// This is a generated snippet — copy or download.\n\nfunction solve() {\n  console.log("Unrestricted coding assistant — internet augmented.");\n  // Your custom logic here\n}\n\nexport { solve };`;
                 explanation = `✨ Custom code scaffold. Modify as you wish, zero barriers.`;
@@ -528,9 +458,7 @@ export const Counter = () => {
             return { fileName, codeContent, explanation };
         }
 
-        // Render AI message with code block, copy, download
         async function addAIMessageWithCode(userMessage) {
-            // show typing
             const typingId = 'typing-' + Date.now();
             const typingEl = document.createElement('div');
             typingEl.className = 'message-row message-ai';
@@ -549,24 +477,16 @@ export const Counter = () => {
             chatContainer.appendChild(typingEl);
             scrollToBottom();
 
-            // Simulate internet fetch (delay for realism)
             const internetNote = await fetchInternetContext(userMessage);
             
-            // Remove typing
             const typingNode = document.getElementById(typingId);
             if(typingNode) typingNode.remove();
 
-            // Generate response
             const { fileName, codeContent, explanation } = generateCodeResponse(userMessage);
-            
-            // escape HTML for display
             const escapedCode = codeContent.replace(/</g, '&lt;').replace(/>/g, '&gt;');
             
             const messageDiv = document.createElement('div');
             messageDiv.className = 'message-row message-ai';
-            
-            // unique id for copy buttons
-            const uid = 'code-' + Date.now() + '-' + Math.random().toString(36);
             
             messageDiv.innerHTML = `
                 <div class="ai-bubble-wrapper">
@@ -596,7 +516,6 @@ export const Counter = () => {
             
             chatContainer.appendChild(messageDiv);
             
-            // attach event listeners for copy/download inside this message
             const copyBtn = messageDiv.querySelector('.copy-btn');
             const downloadBtn = messageDiv.querySelector('.download-btn');
             
@@ -626,7 +545,6 @@ export const Counter = () => {
             scrollToBottom();
         }
 
-        // Add user message bubble
         function addUserMessage(text) {
             const userDiv = document.createElement('div');
             userDiv.className = 'message-row message-user';
@@ -645,7 +563,6 @@ export const Counter = () => {
             chatContainer.scrollTop = chatContainer.scrollHeight;
         }
 
-        // handle send
         async function handleSend() {
             const text = userInput.value.trim();
             if (!text) return;
@@ -657,7 +574,6 @@ export const Counter = () => {
             await addAIMessageWithCode(text);
         }
 
-        // auto resize textarea
         userInput.addEventListener('input', function() {
             this.style.height = 'auto';
             this.style.height = Math.min(this.scrollHeight, 100) + 'px';
@@ -671,12 +587,7 @@ export const Counter = () => {
             }
         });
 
-        // initial scroll
         scrollToBottom();
-
-        // Preload internet context (mock) - already present.
-        // Additional: if user asks for "no limits" we deliver.
-        // Expose download to global for example buttons
         window.downloadFile = downloadFile;
     })();
 </script>
